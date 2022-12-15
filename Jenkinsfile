@@ -50,7 +50,7 @@ pipeline{
                 
                 script{
                     
-                    withSonarQubeEnv('sonarqube') {
+                    withSonarQubeEnv('my_sonarqube_in_docker') {
                         
                         sh 'mvn clean package sonar:sonar'
                     }
